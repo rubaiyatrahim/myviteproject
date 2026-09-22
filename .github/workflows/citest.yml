@@ -21,17 +21,14 @@ jobs:
 
       # Install global dependencies
       - name: Install global dependencies
-        working-directory: ./myviteproject
         run: npm install -g typescript vite vitest
 
       # Build
       - name: Build
-        working-directory: ./myviteproject
         run: npm run build
 
       # Run tests
       - name: Run tests
-        working-directory: ./myviteproject
         run: npm run test
 
       # Show success message
